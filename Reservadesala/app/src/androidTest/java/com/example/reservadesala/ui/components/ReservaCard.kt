@@ -13,10 +13,11 @@ import com.example.reservasalas.data.Reserva
 fun ReservaCard(reserva: Reserva) {
     Card(modifier = Modifier.padding(4.dp)) {
         Column(modifier = Modifier.padding(8.dp)) {
-            Text(text = "Professor: ${reserva.professor}")
-            Text(text = "Data: ${reserva.data}")
-            Text(text = "Hora: ${reserva.hora}")
-            Text(text = "Sala: ${reserva.sala}")
+            Professor (professor  = "Professor: ${reserva.professor}")
+            data (data = "Data: ${reserva.data}")
+            Sala (Sala "Sala: ${reserva.sala}")
+            Hora (Hora = "Hora: ${reserva.hora}")
+
         }
     }
 }
